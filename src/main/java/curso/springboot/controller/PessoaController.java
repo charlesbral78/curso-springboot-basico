@@ -1,4 +1,4 @@
-package springboot.controller;
+package curso.springboot.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,10 +18,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import springboot.model.Pessoa;
-import springboot.model.Telefone;
-import springboot.repository.PessoaRepository;
-import springboot.repository.TelefoneRepository;
+import curso.springboot.model.Pessoa;
+import curso.springboot.model.Telefone;
+import curso.springboot.repository.PessoaRepository;
+import curso.springboot.repository.TelefoneRepository;
 
 @Controller
 public class PessoaController {

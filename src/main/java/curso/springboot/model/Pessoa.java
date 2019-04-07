@@ -1,4 +1,4 @@
-package springboot.model;
+package curso.springboot.model;
 
 import java.io.Serializable;
 import java.util.List;

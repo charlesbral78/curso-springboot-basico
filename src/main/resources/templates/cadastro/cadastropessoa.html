@@ -6,8 +6,8 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <title>Cadastro Pessoas</title>
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link type="text/css" rel="stylesheet" href="/materialize\css\materialize.css"  media="screen,projection"/>
-<link type="text/css" rel="stylesheet" href="/materialize.min.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="/materialize/css/materialize.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="/materialize/css/materialize.min.css"  media="screen,projection"/>
 
 <style type="text/css">
 table.striped>tbory>tr:nth-child(odd) {
@@ -110,9 +110,9 @@ color: white;
  <td><a th:href="@{/editarpessoa/{idpessoa}(idpessoa=${pessoa.id})}">Editar</a></td>
  <td><a th:href="@{/removerpessoa/{idpessoa}(idpessoa=${pessoa.id})}">Excluir</a></td>
  </table>
- 
- <script type="text/javascript" src="materialize/js/materialize.js"></script>
- <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+ <script type="text/javascript" src="/materialize/js/materialize.js"></script>
+ <script type="text/javascript" src="/materialize/js/materialize.min.js"></script>
  
 </body>
 </html>

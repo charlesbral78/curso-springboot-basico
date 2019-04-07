@@ -1,4 +1,4 @@
-package springboot.security;
+package curso.springboot.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
@@ -8,8 +8,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import springboot.model.Usuario;
-import springboot.repository.UsuarioRepository;
+import curso.springboot.model.Usuario;
+import curso.springboot.repository.UsuarioRepository;
 
 @Service
 @Transactional

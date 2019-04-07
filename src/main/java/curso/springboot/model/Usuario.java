@@ -1,4 +1,4 @@
-package springboot.model;
+package curso.springboot.model;
 
 import java.util.Collection;
 import java.util.List;
