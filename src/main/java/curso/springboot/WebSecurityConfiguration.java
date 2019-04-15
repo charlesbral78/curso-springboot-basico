@@ -23,8 +23,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 		.csrf()
 		.disable()
 		.authorizeRequests()
-		.antMatchers("/materialize/**").permitAll()
-		//.antMatchers(HttpMethod.GET, "/").permitAll() // Qualquer usuario acessa a página inicial
+		.antMatchers(HttpMethod.GET, "/").permitAll() // Qualquer usuario acessa a página inicial
 		.antMatchers(HttpMethod.GET, "/cadastropessoa").hasAnyRole("ADMIN")
 		.anyRequest().authenticated()
 
@@ -46,9 +45,9 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 		auth.userDetailsService(implementacaoUserDetailsService)
 		.passwordEncoder(new BCryptPasswordEncoder());
 		
-		auth.inMemoryAuthentication().passwordEncoder(new BCryptPasswordEncoder())
-		.withUser("charles")
-		.password("$2a$10$mEgwmqCY69i85yiGN1fJ4.6H6bq9ccCYytVVZnYjNP3kKFuSZ/It2")
-		.roles("ADMIN");
+//		auth.inMemoryAuthentication().passwordEncoder(new BCryptPasswordEncoder())
+//		.withUser("charles")
+//		.password("$2a$10$mEgwmqCY69i85yiGN1fJ4.6H6bq9ccCYytVVZnYjNP3kKFuSZ/It2")
+//		.roles("ADMIN");
 	}
 }
